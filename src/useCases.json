@@ -29,15 +29,5 @@
       "example": "Inclure un cas récent où notre démarche RSE a aidé un autre client du secteur immobilier à améliorer son efficacité énergétique et à réduire son empreinte carbone, illustrant ainsi les avantages tangibles de notre engagement.",
       "result": "Les responsables de Duret Immobilier doivent comprendre la profondeur et la sincérité de notre engagement RSE et être motivés à continuer et à approfondir leur collaboration avec le groupe Hérige, en voyant clairement comment cela aligne leurs propres objectifs de durabilité avec les nôtres."
     }
-  },  {
-    "description": "use case de démo",
-    "criteria": {
-      "context": "Matthieu act environnemental et social. Je m'adresse au groupe Duret Immobilier, un de nos clients clés, pour les informer de ces engagements et discuter des bénéfices mutuels de notre approche RSE.",
-      "role": "deuxieme critere de prompt",
-      "intention": "Rédige un email expliquant les principaux aspects de notre démarche RSE, notamment les innovations en termes de matériaux durables et les pratiques de travail éthiques. Souligne comment ces efforts se traduisent par des bénéfices pour Duret Immobilier, notamment en termes de conformité réglementaire, d'image de marque et de réduction des coûts à long terme.",
-      "task": "L'email doit être clair, informatif et convaincant, conçu pour un public professionnel qui valorise la durabilité et l'innovation. Utilise un ton respectueux et professionnel.",
-      "example": "Inclure un cas récent où notre démarche RSE a aidé un autre client du secteur immobilier à améliorer son efficacité énergétique et à réduire son empreinte carbone, illustrant ainsi les avantages tangibles de notre engagement.",
-      "result": "Les responsables de Duret Immobilier doivent comprendre la profondeur et la sincérité de notre engagement RSE et être motivés à continuer et à approfondir leur collaboration avec le groupe Hérige, en voyant clairement comment cela aligne leurs propres objectifs de durabilité avec les nôtres."
-    }
   }
 ]
