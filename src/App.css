@@ -28,6 +28,12 @@ body {
   overflow-y: scroll;
   position: fixed;
 
+  & h1 {
+    text-align: center;
+    color:white;
+    font-size:64px;
+  }
+
   & main {
     display: flex;
     flex-direction: column;
