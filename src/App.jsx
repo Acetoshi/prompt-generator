@@ -127,7 +127,7 @@ function App() {
       {useCaseIndex !== null && (
         <section>
           <h2>
-            3 - Copiez-collez le prompt suivant dans ChatGPT et complélez-le au
+            3 - Copiez-collez le prompt suivant dans ChatGPT et complétez-le au
             besoin
           </h2>
           <textarea
