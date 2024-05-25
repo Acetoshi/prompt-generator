@@ -25,6 +25,24 @@ function App() {
     }));
   }
 
+  function copyPromptToClipboard() {
+    //select and copy text
+    const copyText = document.getElementById("prompt-box");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(copyText.value);
+
+    //make the button change text, to give feedback to the user
+    const copyButton = document.getElementById("copy-button");
+    copyButton.innerText = "✓ Prompt copié";
+    copyButton.disabled = true;
+
+    setTimeout(() => {
+      copyButton.innerText = "Copier le prompt";
+      copyButton.disabled = false;
+    }, 1500);
+  }
+
   useEffect(() => {
     if (useCaseIndex !== null) {
       let newPrompt = "";
@@ -80,21 +98,28 @@ function App() {
         </fieldset>
       </section>
 
-      <section>
-        <h2>2 - Sélectionnez le cas d’usage que vous voulez tester</h2>
-        <fieldset className="use-case-selection">
-          {useCases.map((useCase, index) => (
-            <label>
-              <input
-                type="radio"
-                name="use-case"
-                onChange={() => setUseCaseIndex(index)}
-              />
-              {useCase.description}
-            </label>
-          ))}
-        </fieldset>
-      </section>
+      {(criteria.context ||
+        criteria.role ||
+        criteria.intention ||
+        criteria.result ||
+        criteria.task ||
+        criteria.example) && (
+        <section>
+          <h2>2 - Sélectionnez le cas d’usage que vous voulez tester</h2>
+          <fieldset className="use-case-selection">
+            {useCases.map((useCase, index) => (
+              <label>
+                <input
+                  type="radio"
+                  name="use-case"
+                  onChange={() => setUseCaseIndex(index)}
+                />
+                {useCase.description}
+              </label>
+            ))}
+          </fieldset>
+        </section>
+      )}
 
       {useCaseIndex !== null && (
         <section>
@@ -103,13 +128,22 @@ function App() {
             les parties manquantes (s’il y en a)
           </h2>
           <textarea
-            className="prompt-box"
+            id="prompt-box"
             defaultValue={prompt}
             rows="20"
             cols="33"
             maxlength="10000"
             wrap="true"
           ></textarea>
+          <div className="button-wrapper">
+            <button
+              role="button"
+              onClick={copyPromptToClipboard}
+              id="copy-button"
+            >
+              Copier le prompt
+            </button>
+          </div>
         </section>
       )}
     </main>
