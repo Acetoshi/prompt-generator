@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0px;
+}
+
+p,
+label,
+input {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  background-image: linear-gradient(#ff1b6b, #45caff);
+  height: 100svh;
+  width: 100vw;
+  overflow-y: scroll;
+  position: fixed;
+
+  & main {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 32px;
+    align-items: center;
+
+    & section {
+      padding: 32px;
+      border-radius: 16px;
+      background-color: white;
+      max-width: 700px;
+
+      & h2 {
+        margin-bottom: 32px;
+      }
+
+      & fieldset {
+        padding: 0;
+        margin: none;
+        border: none;
+        display: flex;
+        flex-direction: column;
+
+        & input:hover {
+          cursor: pointer;
+        }
+      }
+
+      & .prompt-box {
+        width: 100%;
+      }
+    }
+  }
+}

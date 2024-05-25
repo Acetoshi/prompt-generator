@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import useCases from "./useCases.json";
 import "./App.css";
 
@@ -14,6 +14,8 @@ function App() {
 
   const [useCaseIndex, setUseCaseIndex] = useState(null);
 
+  const [prompt, setPrompt] = useState("");
+
   console.log(useCaseIndex);
 
   function toggleCriteria(criterionToToggle) {
@@ -23,15 +25,17 @@ function App() {
     }));
   }
 
-  function getPrompt() {
-    let prompt = "";
-    for (const criterion in criteria) {
-      if (criteria[criterion]) {
-        prompt += useCases[useCaseIndex].criteria[criterion] + "\n";
+  useEffect(() => {
+    if (useCaseIndex !== null) {
+      let newPrompt = "";
+      for (const criterion in criteria) {
+        if (criteria[criterion]) {
+          newPrompt += useCases[useCaseIndex].criteria[criterion] + "\n \n";
+        }
       }
+      setPrompt(newPrompt);
     }
-    return prompt;
-  }
+  }, [criteria, useCaseIndex]);
 
   return (
     <main>
@@ -44,61 +48,52 @@ function App() {
           1 - Sélectionnez les critères que vous avez fait tomber dans le
           chamboule-tout.
         </h2>
-        <form>
-          <input
-            type="checkbox"
-            id="context"
-            onChange={() => toggleCriteria("context")}
-          />
-          <label for="context"> Contexte</label>
-          <input
-            type="checkbox"
-            id="role"
-            onChange={() => toggleCriteria("role")}
-          />
-          <label for="role"> Rôle</label>
-          <input
-            type="checkbox"
-            id="intention"
-            onChange={() => toggleCriteria("intention")}
-          />
-          <label for="intention"> Intention</label>
-          <input
-            type="checkbox"
-            id="task"
-            onChange={() => toggleCriteria("task")}
-          />
-          <label for="task"> Tâche</label>
-          <input
-            type="checkbox"
-            id="example"
-            onChange={() => toggleCriteria("example")}
-          />
-          <label for="example"> Exemple</label>
-          <input
-            type="checkbox"
-            id="result"
-            onChange={() => toggleCriteria("result")}
-          />
-          <label for="result"> Résultat</label>
-        </form>
+        <fieldset className="criteria-selection">
+          <label>
+            <input type="checkbox" onChange={() => toggleCriteria("context")} />
+            Contexte
+          </label>
+          <label>
+            <input type="checkbox" onChange={() => toggleCriteria("role")} />
+            Rôle
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              onChange={() => toggleCriteria("intention")}
+            />
+            Intention
+          </label>
+          <label>
+            <input type="checkbox" onChange={() => toggleCriteria("task")} />
+            Tâche
+          </label>
+          <label>
+            <input type="checkbox" onChange={() => toggleCriteria("example")} />
+            Exemple
+          </label>
+
+          <label>
+            <input type="checkbox" onChange={() => toggleCriteria("result")} />
+            Résultat
+          </label>
+        </fieldset>
       </section>
 
       <section>
         <h2>2 - Sélectionnez le cas d’usage que vous voulez tester</h2>
-        <form>
+        <fieldset className="use-case-selection">
           {useCases.map((useCase, index) => (
-            <>
+            <label>
               <input
                 type="radio"
-                id={`use-case-${index}`}
                 name="use-case"
                 onChange={() => setUseCaseIndex(index)}
               />
-              <label for={`use-case-${index}`}> {useCase.description}</label>
-            </>
+              {useCase.description}
+            </label>
           ))}
-        </form>
+        </fieldset>
       </section>
 
       {useCaseIndex !== null && (
@@ -107,8 +102,14 @@ function App() {
             3 - Copiez-collez le prompt ci-dessous dans ChatGPT puis, complétez
             les parties manquantes (s’il y en a)
           </h2>
-
-          <input type="text" value={getPrompt()} />
+          <textarea
+            className="prompt-box"
+            defaultValue={prompt}
+            rows="20"
+            cols="33"
+            maxlength="10000"
+            wrap="true"
+          ></textarea>
         </section>
       )}
     </main>
