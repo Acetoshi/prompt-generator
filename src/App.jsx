@@ -53,13 +53,11 @@ function App() {
     }
   }, [criteria, useCaseIndex]);
 
-  // focus the prompt into view when it changes
+  // focus the prompt into view when the use case changes
   useEffect(() => {
-    if (useCaseIndex !== null) {
-      const promptBox = document.getElementById("prompt-box");
-      promptBox.scrollIntoView({ behavior: "smooth"});
-    }
-  }, [prompt]);
+    const promptBox = document.getElementById("prompt-box");
+    promptBox.scrollIntoView({ behavior: "smooth" });
+  }, [useCaseIndex]);
 
   return (
     <main>
@@ -68,10 +66,7 @@ function App() {
       </header>
 
       <section>
-        <h2>
-          1 - Sélectionnez les critères que vous avez fait tomber dans le
-          chamboule-tout.
-        </h2>
+        <h2>1 - Choisissez les critères que vous avez chamboulé</h2>
         <fieldset className="criteria-selection">
           <label>
             <input type="checkbox" onChange={() => toggleCriteria("context")} />
@@ -111,7 +106,7 @@ function App() {
         criteria.task ||
         criteria.example) && (
         <section>
-          <h2>2 - Sélectionnez le cas d’usage que vous voulez tester</h2>
+          <h2>2 - Choisissez votre cas d'usage à tester</h2>
           <fieldset className="use-case-selection">
             {useCases.map((useCase, index) => (
               <label>
@@ -130,8 +125,8 @@ function App() {
       {useCaseIndex !== null && (
         <section>
           <h2>
-            3 - Copiez-collez le prompt ci-dessous dans ChatGPT puis, complétez
-            les parties manquantes (s’il y en a)
+            3 - Copiez-collez le prompt suivant dans ChatGPT et complélez-le au
+            besoingit 
           </h2>
           <textarea
             id="prompt-box"
