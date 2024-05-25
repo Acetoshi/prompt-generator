@@ -46,7 +46,7 @@ body {
       padding: 32px;
       border-radius: 16px;
       background-color: white;
-      max-width: 700px;
+      width: min(700px,70%);
 
       & h2 {
         margin-bottom: 32px;
