@@ -12,7 +12,7 @@
   },  {
     "description": "Expliquer simplement mon savoir-faire à des prospects.",
     "criteria": {
-      "context": "Je suis un représentant de Children Worldwide Fashion (CWF), une entreprise leader dans la mode pour enfants, basée en France. Je m'adresse à un groupe d'entrepreneurs du réseau Entreprendre Vendée lors d'une réunion de networking, avec pour but de présenter notre entreprise et d'explorer des opportunités de collaboration locales. (Contexte)",
+      "context": "Je suis un représentant de Children Worldwide Fashion (CWF), une entreprise leader dans la mode pour enfants, basée en France. Je m'adresse à un groupe d'entrepreneurs du réseau Entreprendre Vendée lors d'une réunion de networking, avec pour but de présenter notre entreprise et d'explorer des opportunités de collaboration locales.",
       "role": "Mon rôle est d'informer et d'inspirer confiance en notre expertise dans la création de collections de vêtements pour enfants pour des marques de luxe.",
       "intention": "Rédige un discours qui met en avant les capacités de production, la qualité de nos créations et notre collaboration avec des marques de renom mondial. Souligne notre engagement envers la durabilité et la responsabilité sociale.",
       "task": "Le discours doit être concis et persuasif, adapté à un auditoire d'entrepreneurs avertis, intéressés par les innovations et les pratiques commerciales éthiques. Utilise un ton professionnel et inspirant.",
