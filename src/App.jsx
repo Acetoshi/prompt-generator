@@ -11,12 +11,8 @@ function App() {
     example: false,
     result: false,
   });
-
   const [useCaseIndex, setUseCaseIndex] = useState(null);
-
   const [prompt, setPrompt] = useState("");
-
-  console.log(useCaseIndex);
 
   function toggleCriteria(criterionToToggle) {
     setCriteria((prevCriteria) => ({
@@ -37,12 +33,14 @@ function App() {
     copyButton.innerText = "✓ Prompt copié";
     copyButton.disabled = true;
 
+    // change the button back to its original state after a short delay
     setTimeout(() => {
       copyButton.innerText = "Copier le prompt";
       copyButton.disabled = false;
     }, 1500);
   }
 
+  // write a new prompt everytime a criteria or useCase changes
   useEffect(() => {
     if (useCaseIndex !== null) {
       let newPrompt = "";
@@ -54,6 +52,14 @@ function App() {
       setPrompt(newPrompt);
     }
   }, [criteria, useCaseIndex]);
+
+  // focus the prompt into view when it changes
+  useEffect(() => {
+    if (useCaseIndex !== null) {
+      const promptBox = document.getElementById("prompt-box");
+      promptBox.scrollIntoView({ behavior: "smooth"});
+    }
+  }, [prompt]);
 
   return (
     <main>
