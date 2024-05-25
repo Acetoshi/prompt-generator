@@ -55,8 +55,10 @@ function App() {
 
   // focus the prompt into view when the use case changes
   useEffect(() => {
-    const promptBox = document.getElementById("prompt-box");
-    promptBox.scrollIntoView({ behavior: "smooth" });
+    if (useCaseIndex !== null) {
+      const promptBox = document.getElementById("prompt-box");
+      promptBox.scrollIntoView({ behavior: "smooth" });
+    }
   }, [useCaseIndex]);
 
   return (
@@ -126,7 +128,7 @@ function App() {
         <section>
           <h2>
             3 - Copiez-collez le prompt suivant dans ChatGPT et complélez-le au
-            besoingit 
+            besoin
           </h2>
           <textarea
             id="prompt-box"
