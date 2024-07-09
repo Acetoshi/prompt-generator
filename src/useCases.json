@@ -3,7 +3,7 @@
     "description": "Réclamation client ou mauvaises nouvelles à annoncer à un client.",
     "criteria": {
       "context": "Notre entreprise fabrique des produits alimentaires frais comme des salades, des sandwichs, et des pizzas. Nous avons reçu un retour de la part d'un de nos principaux distributeurs, une chaîne de supermarchés, indiquant des problèmes récurrents de qualité d'emballage qui ont entraîné des retours de produits et des plaintes de consommateurs.",
-      "role": "En tant que Responsable de la Qualité, mon rôle est de gérer les relations avec les clients et de m'assurer que les normes de qualité de nos produits sont respectées et améliorées en continu.",
+      "role": "En tant que Responsable de la Qualité, ton rôle est de gérer les relations avec les clients et de t'assurer que les normes de qualité de nos produits sont respectées et améliorées en continu.",
       "intention": "L'objectif est de répondre à la réclamation, d'apporter des clarifications, et de proposer des solutions pour rectifier la situation et éviter de futurs incidents similaires.",
       "task": "Préparer une réponse détaillant les actions immédiates prises pour résoudre le problème, les enquêtes en cours concernant les causes de ces défauts d'emballage, et les mesures préventives mises en place.",
       "example": "Inclure des détails tels qu'une révision des procédures de contrôle de qualité, l'adoption de matériaux d'emballage de meilleure qualité, ou des sessions de formation renforcées pour le personnel de production.",
