@@ -12,12 +12,12 @@
   },  {
     "description": "Expliquer simplement mon savoir-faire à des prospects.",
     "criteria": {
-      "context": "Je suis un représentant de Children Worldwide Fashion (CWF), une entreprise leader dans la mode pour enfants, basée en France. Je m'adresse à un groupe d'entrepreneurs du réseau Entreprendre Vendée lors d'une réunion de networking, avec pour but de présenter notre entreprise et d'explorer des opportunités de collaboration locales.",
+      "context": "Je suis un représentant de Children Worldwide Fashion (CWF), une entreprise leader dans la mode pour enfants, basée en France. Je m'adresse à un groupe d'entrepreneurs du réseau Entreprendre Loire-Atlantique lors d'une réunion des membres du réseau, avec pour but de présenter notre entreprise et d'explorer des opportunités de collaboration locales.",
       "role": "Ton rôle est d'informer et d'inspirer confiance en notre expertise dans la création de collections de vêtements pour enfants pour des marques de luxe.",
       "intention": "Tu dois d’adapter à un auditoire d'entrepreneurs avertis, intéressés par les innovations et les pratiques commerciales éthiques. Utilise un ton professionnel et inspirant, en étant concis et persuasif.",
       "task": " Rédige un discours qui met en avant les capacités de production, la qualité de nos créations et notre collaboration avec des marques de renom mondial. Souligne notre engagement envers la durabilité et la responsabilité sociale.",
       "example": "Mentionne un partenariat spécifique avec une marque de luxe bien connue et comment ce partenariat a permis de lancer une collection réussie qui respecte à la fois les tendances de la mode actuelle et les normes environnementales strictes.",
-      "result": "Les entrepreneurs doivent comprendre notre position de leader dans le secteur de la mode pour enfants, reconnaître la valeur de notre approche en termes de design et de durabilité, et envisager des possibilités de collaboration avec CWF pour promouvoir ou distribuer nos produits dans la région de Vendée."
+      "result": "Les entrepreneurs doivent comprendre notre position de leader dans le secteur de la mode pour enfants, reconnaître la valeur de notre approche en termes de design et de durabilité, et envisager des possibilités de collaboration avec CWF pour promouvoir ou distribuer nos produits dans la région."
     }
   },  {
     "description": "Contacter un client pour leur expliquer la démarche RSE de notre entreprise et les conséquences que cela a pour eux.",
