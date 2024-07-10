@@ -12,7 +12,7 @@
   },  {
     "description": "Expliquer simplement mon savoir-faire à des prospects.",
     "criteria": {
-      "context": "Je suis un représentant de Children Worldwide Fashion (CWF), une entreprise leader dans la mode pour enfants, basée en France. Je m'adresse à un groupe d'entrepreneurs du réseau Entreprendre Loire-Atlantique lors d'une réunion des membres du réseau, avec pour but de présenter notre entreprise et d'explorer des opportunités de collaboration locales.",
+      "context": "Je suis un représentant d'une entreprise leader dans la mode pour enfants, basée en France. Je m'adresse à un groupe d'entrepreneurs du réseau Entreprendre Loire-Atlantique lors d'une réunion des membres du réseau, avec pour but de présenter notre entreprise et d'explorer des opportunités de collaboration locales.",
       "role": "Ton rôle est d'informer et d'inspirer confiance en notre expertise dans la création de collections de vêtements pour enfants pour des marques de luxe.",
       "intention": "Tu dois d’adapter à un auditoire d'entrepreneurs avertis, intéressés par les innovations et les pratiques commerciales éthiques. Utilise un ton professionnel et inspirant, en étant concis et persuasif.",
       "task": " Rédige un discours qui met en avant les capacités de production, la qualité de nos créations et notre collaboration avec des marques de renom mondial. Souligne notre engagement envers la durabilité et la responsabilité sociale.",
@@ -22,12 +22,12 @@
   },  {
     "description": "Contacter un client pour leur expliquer la démarche RSE de notre entreprise et les conséquences que cela a pour eux.",
     "criteria": {
-      "context": "Je suis un représentant du groupe Hérige, et nous nous engageons fermement dans une démarche RSE pour améliorer notre impact environnemental et social. Je m'adresse au groupe Duret Immobilier, un de nos clients clés, pour les informer de ces engagements et discuter des bénéfices mutuels de notre approche RSE.",
-      "role": "En tant que chargé de relations clients, ton rôle est de renforcer notre collaboration en alignant nos initiatives RSE avec les objectifs de durabilité de Duret Immobilier.",
+      "context": "Je suis un représentant d'un groupe spécialisé dans la fabrication de béton et la menuiserie industrielle, et nous nous engageons fermement dans une démarche RSE pour améliorer notre impact environnemental et social. Je m'adresse à un promoteur Immobilier, un de nos clients clés, pour les informer de ces engagements et discuter des bénéfices mutuels de notre approche RSE.",
+      "role": "En tant que chargé de relations clients, ton rôle est de renforcer notre collaboration en alignant nos initiatives RSE avec les objectifs de durabilité de ce promoteur immobilier.",
       "intention": "Tu dois être clair, informatif et convaincant, et tu dois valoriser la durabilité et l'innovation. Utilise un ton respectueux et professionnel.",
-      "task": "Rédige un email expliquant les principaux aspects de notre démarche RSE, notamment les innovations en termes de matériaux durables et les pratiques de travail éthiques. Souligne comment ces efforts se traduisent par des bénéfices pour Duret Immobilier, notamment en termes de conformité réglementaire, d'image de marque et de réduction des coûts à long terme.",
+      "task": "Rédige un email expliquant les principaux aspects de notre démarche RSE, notamment les innovations en termes de matériaux durables et les pratiques de travail éthiques. Souligne comment ces efforts se traduisent par des bénéfices pour ce promoteur immobilier, notamment en termes de conformité réglementaire, d'image de marque et de réduction des coûts à long terme.",
       "example": "Inclure un cas récent où notre démarche RSE a aidé un autre client du secteur immobilier à améliorer son efficacité énergétique et à réduire son empreinte carbone, illustrant ainsi les avantages tangibles de notre engagement.",
-      "result": "Les responsables de Duret Immobilier doivent comprendre la profondeur et la sincérité de notre engagement RSE et être motivés à continuer et à approfondir leur collaboration avec le groupe Hérige, en voyant clairement comment cela aligne leurs propres objectifs de durabilité avec les nôtres."
+      "result": "Les responsables de ce promoteur immobilier doivent comprendre la profondeur et la sincérité de notre engagement RSE et être motivés à continuer et à approfondir leur collaboration avec notre groupe, en voyant clairement comment cela aligne leurs propres objectifs de durabilité avec les nôtres."
     }
   }
 ]
